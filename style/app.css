@@ -13,8 +13,8 @@
 
 .logo{
 
-    width:340px;
-    height: 180px;
+    width:400px;
+    height: 200px;
     margin:  auto;
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -32,4 +32,21 @@
     background-position: top center;
 
     background-image: url(" ");
+}
+
+
+.num-dollar{
+    max-width: 400px;
+    margin:  auto;
+    text-align: center;
+    font-size: 100px;
+    color: #ce2627;
+    text-shadow:
+            -5px -5px 3px #fff,
+            3px -5px 3px #fff,
+            -3px 3px 3px #fff,
+            5px 5px 3px #fff;
+
+    -webkit-text-stroke: 2px #ce2627;
+    -webkit-text-fill-color: #ce2627;
 }

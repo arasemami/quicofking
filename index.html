@@ -19,6 +19,7 @@
 
 
                     <div id="main"  class="logo"></div>
+                    <div  class="num-dollar"> <span id="num">1000</span> $</div>
 
 <a href="#" onclick="changeBG()">dfdfdfdfdf</a>
 
@@ -40,20 +41,39 @@
 
 
 <script>
-    var i=0;
+    var i=0;var numdollar=10;
     var key=true;
-    function changeBG() {
-        if (i<=8 ) {
-            setInterval(function () {
-                document.getElementById("bg").style.backgroundImage = "url('img/p" + i.toString()+".png')"; i++;
-            }, 100);
-        } else {
-            i=0;
+    var number = [1,2,3,4,5,6,7,8];
+
+
+    function continer() {
+        if (i<=8  ) {
+            document.getElementById("bg").style.backgroundImage = "url('img/p" + number[i].toString() + ".png')";
+            i++;
 
         }
 
+        if(number[i] ==8 ){
+            i=0;
+            number.sort(function(x,y){ return y - x});
 
+        }
+        else if (number[i] ==0)
+        {
+            i=0;
+            number.sort(function(x,y){ return x - y});
+        }
     }
+    function countnumber() {
+        if (numdollar !=1010)
+        {
+            document.getElementById("num").innerHTML=numdollar.toString();
+            numdollar= numdollar + 10;
+        }
+    }
+
+    setInterval(continer, 100);
+    setInterval(countnumber, 80);
 </script>
 </body>
 </html>
