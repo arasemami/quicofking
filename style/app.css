@@ -1,0 +1,35 @@
+
+.container{
+    margin:0 auto;
+    display: block;
+    max-width: 1020px;
+    min-height: 580px;
+    background-repeat: no-repeat;
+    background-size: 1020px 680px;
+    background-position: top center;
+    background-image: url("../img/bg.jpg");
+    padding-bottom: 20px;
+}
+
+.logo{
+
+    width:340px;
+    height: 180px;
+    margin:  auto;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-image: url("../img/logo.png");
+    -webkit-animation:1s slideDown ease;
+}
+
+.bg-motion{
+    margin:0 auto;
+    display: block;
+    max-width: 1020px;
+    min-height: 700px;
+    background-repeat: no-repeat;
+    background-size: 1020px 680px;
+    background-position: top center;
+
+    background-image: url(" ");
+}
