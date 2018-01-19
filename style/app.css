@@ -1,6 +1,6 @@
 
-.container{
-    margin:0 auto;
+.container {
+    margin: 0 auto;
     display: block;
     max-width: 1020px;
     min-height: 580px;
@@ -11,19 +11,64 @@
     padding-bottom: 20px;
 }
 
-.logo{
+.logo {
 
-    width:400px;
+    width: 400px;
     height: 200px;
-    margin:  auto;
+    margin: auto;
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-image: url("../img/logo.png");
-    -webkit-animation:1s slideDown ease;
+    /*-webkit-animation: 1s slideDown ease;*/
+    position: relative;
+    top: 0px;
+    -webkit-animation: myfirst 1s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: normal; /* Safari 4.0 - 8.0 */
+    animation: myfirst 1s;
+    animation-direction: normal;
 }
 
-.bg-motion{
-    margin:0 auto;
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirst {
+    0% {
+        -webkit-transform: scale(1.8);
+    }
+    50% {
+        -webkit-transform: scale(0.95);
+    }
+    80% {
+        -webkit-transform: scale(1.05);
+    }
+    90% {
+        -webkit-transform: scale(0.98);
+    }
+    100% {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes myfirst {
+    0% {
+        -webkit-transform: scale(1.8);
+    }
+    50% {
+        -webkit-transform: scale(0.95);
+    }
+    80% {
+        -webkit-transform: scale(1.05);
+    }
+    90% {
+        -webkit-transform: scale(0.98);
+    }
+    100% {
+        -webkit-transform: scale(1);
+    }
+
+
+}
+
+.bg-motion {
+    margin: 0 auto;
     display: block;
     max-width: 1020px;
     min-height: 700px;
@@ -34,18 +79,16 @@
     background-image: url(" ");
 }
 
-
-.num-dollar{
+.num-dollar {
     max-width: 400px;
-    margin:  auto;
+    margin: auto;
     text-align: center;
     font-size: 100px;
     color: #ce2627;
-    text-shadow:
-            -5px -5px 3px #fff,
-            3px -5px 3px #fff,
-            -3px 3px 3px #fff,
-            5px 5px 3px #fff;
+    text-shadow: -5px -5px 3px #fff,
+    3px -5px 3px #fff,
+    -3px 3px 3px #fff,
+    5px 5px 3px #fff;
 
     -webkit-text-stroke: 2px #ce2627;
     -webkit-text-fill-color: #ce2627;
