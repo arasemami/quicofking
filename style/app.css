@@ -13,7 +13,7 @@
 
 .logo {
 
-    width: 300px;
+    width: 18rem;
     height: 180px;
     margin: auto;
     background-size: 100% auto;
@@ -82,7 +82,7 @@
     max-width: 400px;
     margin: auto;
     text-align: center;
-    font-size: 100px;
+    font-size: 90px;
     color: #ce2627;
     text-shadow: -5px -5px 3px #fff,
     3px -5px 3px #fff,
@@ -98,7 +98,7 @@
 
 .btn-submit{
     margin: auto;
-    width: 20rem;
+    width: 16rem;
     height: 45px;
     background-color: #70bd44;
     border-radius: 100px;
